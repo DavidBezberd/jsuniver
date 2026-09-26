@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Підприємство та відділи</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Підприємство та відділи</h1>
+
+    <form id="companyForm">
+
+        <section class="form-section">
+            <h2>Дані підприємства</h2>
+
+            <label>
+                Найменування підприємства:
+                <input type="text" id="companyName" required>
+            </label>
+
+            <label>
+                Напрям діяльності:
+                <input type="text" id="companyActivity" required>
+            </label>
+
+            <label>
+                Адреса:
+                <input type="text" id="companyAddress" required>
+            </label>
+        </section>
+
+        <section class="form-section">
+            <h2>Дані відділів</h2>
+
+            <div id="departments"></div>
+        </section>
+
+        <button type="submit">Створити об'єкти та виконати розрахунок</button>
+    </form>
+
+    <div id="error" class="error"></div>
+
+    <div id="result"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
