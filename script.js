@@ -82,7 +82,7 @@ document.getElementById("companyForm").addEventListener("submit", function (even
         return;
     }
 
-    enterprise.name = companyName;
+    enterprise.entName = companyName;
     enterprise.activity = companyActivity;
     enterprise.address = companyAddress;
 
@@ -217,7 +217,7 @@ document.getElementById("companyForm").addEventListener("submit", function (even
 
             <p>
                 <strong>Назва:</strong>
-                ${bestDepartment.name}
+                ${bestDepartment.entName}
             </p>
 
             <p>
@@ -251,7 +251,7 @@ document.getElementById("companyForm").addEventListener("submit", function (even
 
             <p>
                 <strong>Найменування підприємства:</strong>
-                ${bestDepartment.nameOfEnterprise}
+                ${bestDepartment.entName}
             </p>
 
             <p>
@@ -296,8 +296,6 @@ document.getElementById("companyForm").addEventListener("submit", function (even
         bestDepartment.hasOwnProperty("address")
     );
 
-
-    // Ланцюжок прототипів
     console.log("===== ЛАНЦЮЖОК ПРОТОТИПІВ =====");
 
     let currentObject = bestDepartment;
